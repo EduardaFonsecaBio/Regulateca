@@ -1,21 +1,21 @@
 {
- "atualizado": "03/10/2026 06:06",
+ "atualizado": "03/10/2026 08:35",
  "coleta": "0 documentos novos, 0 falhas",
  "alertas": [
-  "11ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: 94677325.0.0000.9167; só no extrato: 88242825.9.1001.5335, 92173725.9.0000.001)",
-  "12ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: 92173725.9.0000.001; só no extrato: 92173725.9.0000.0017, 94677325.0.0000.9167)",
-  "2ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: ; só no extrato: 90484825.0.0000.5011, 93112125.1.0000.5275, 93305925.7.0000.5166)",
-  "3ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: ; só no extrato: 92032425.3.0000.5214)",
-  "4ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: ; só no extrato: 93495125.8.0000.5166, 95284725.9.0000.0102)",
-  "5ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: ; só no extrato: 84275524.8.2007.0005)",
-  "6ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: 87981425.5.0000.5020, 93676425.6.0000.5108, 96256026.2.0000.5653; só no extrato: 95791326.3.0000.0081)",
-  "9ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: 95936526.6.1001.5231; só no extrato: )"
+  "11ª RO INAEP: só na pauta: 94677325.0.0000.9167; só no extrato: 88242825.9.1001.5335, 92173725.9.0000.001",
+  "12ª RO INAEP: só na pauta: 92173725.9.0000.001; só no extrato: 92173725.9.0000.0017, 94677325.0.0000.9167",
+  "2ª RO INAEP: só no extrato: 90484825.0.0000.5011, 93112125.1.0000.5275, 93305925.7.0000.5166",
+  "3ª RO INAEP: só no extrato: 92032425.3.0000.5214",
+  "4ª RO INAEP: só no extrato: 93495125.8.0000.5166, 95284725.9.0000.0102",
+  "5ª RO INAEP: só no extrato: 84275524.8.2007.0005",
+  "6ª RO INAEP: só na pauta: 87981425.5.0000.5020, 93676425.6.0000.5108, 96256026.2.0000.5653; só no extrato: 95791326.3.0000.0081",
+  "9ª RO INAEP: só na pauta: 95936526.6.1001.5231"
  ],
  "itens": [
   {
    "orgao": "Anvisa (Dicol)",
    "reuniao": "ROP 10/2026",
-   "assunto": "- O Diretor-Presidente Leandro Safatle destacou três marcos recentes da agenda global de saúde pública – o Dia Mundial Sem Tabaco, o Dia Mundial do Meio Ambient",
+   "assunto": "Trecho: …clusão, mas a sua continuidade natural; elucidou que nenhum ensaio clínico por mais robusto que seja consegue antecipar tudo o que acontece quando milhões de pessoas são vacinadas no mundo real; nesse sentido, avaliou que a suspensão tempor…",
    "pauta": "",
    "decisao": "Informe (sem deliberação)",
    "prazos": "",
@@ -620,7 +620,7 @@
   {
    "orgao": "INAEP",
    "reuniao": "14ª RO INAEP",
-   "assunto": "Recursos de análise ética (CAAE: 77596623.5.0000.5160; 97754126.0.0000.5105)",
+   "assunto": "Trecho: …Recursos de análise ética (CAAE: 77596623.5.0000.5160; 97754126.0.0000.5105)…",
    "pauta": "14ª RO INAEP item 3.1 (30/09/2026)",
    "decisao": "",
    "prazos": "",
@@ -631,7 +631,7 @@
   {
    "orgao": "INAEP",
    "reuniao": "1ª RO INAEP",
-   "assunto": "Membro Relator: Meiruze Sousa Freitas A s s u n t o : Proposta para a desenvolvimento de biobancos. redistribuição do passivo de protocolos de",
+   "assunto": "Trecho: …Membro Relator: Meiruze Sousa Freitas A s s u n t o : Proposta para a desenvolvimento de biobancos. redistribuição do passivo de protocolos de…",
    "pauta": "1ª RO INAEP item 2.1 ()",
    "decisao": "",
    "prazos": "",
