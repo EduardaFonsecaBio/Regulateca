@@ -85,7 +85,12 @@ def analisar(it, tipo, proc_reuniao=""):
     rel = "alta" if kw else "média" if explicita or contexto else "baixa" if mencao else ""
     a = re.search(r"Assuntos?:\s*(.+?)(?=\s(?:Área:|Agenda Regulatória|Excepcionalidade|Processos?:|Diretor|Diretora|Informe:|Deliberad|Recorrente|Área responsável)|$)", corpo)
     rec = re.search(r"Recorrente:\s*(.+?)\s+CNPJ", corpo)
-    assunto = a.group(1) if a else ("Recurso de " + rec.group(1) if rec else corpo[:160])
+    if a: assunto = a.group(1)
+    elif rec: assunto = "Recurso de " + rec.group(1)
+    else:
+        pos = [n.find(k) for k in kw if n.find(k) >= 0]
+        i0 = min(pos) if pos else 0
+        assunto = "Trecho: …" + corpo[max(0, i0 - 100):i0 + 140].strip() + "…"
     dec = ""
     if tipo != "pauta":
         d = re.search(r"((?:A Diretoria Colegiada|O Colegiado)[^.]{0,90}?\s(?:decidiu|deliberou|aprovou)|Deliberad[oa]:|Deliberação:)", corpo)
@@ -146,7 +151,8 @@ def main():
     for (reuniao, tipo), s in caae_por.items():  # alerta de divergência de CAAEs entre pauta e extrato
         o = caae_por.get((reuniao, "extrato" if tipo == "pauta" else None))
         if tipo == "pauta" and o is not None and s != o:
-            msg = f"{reuniao}: CAAEs diferem entre pauta e extrato (só na pauta: {', '.join(sorted(s - o))}; só no extrato: {', '.join(sorted(o - s))})"
+            lados = [f"só na pauta: {', '.join(sorted(s - o))}" if s - o else "", f"só no extrato: {', '.join(sorted(o - s))}" if o - s else ""]
+            msg = f"{reuniao}: " + "; ".join(x for x in lados if x)
             alertas.append(msg); print("ALERTA", msg)
     if "--json" in sys.argv:
         import datetime, json
