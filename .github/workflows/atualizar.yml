@@ -8,6 +8,7 @@ permissions:
 jobs:
   atualizar:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -19,6 +20,12 @@ jobs:
         run: python coletor.py
       - name: Ler documentos e gerar dados do painel
         run: python regulateca_leitor.py pdfs docs --json
+      - name: Registrar normas do DOU (INLABS)
+        continue-on-error: true
+        env:
+          INLABS_EMAIL: ${{ secrets.INLABS_EMAIL }}
+          INLABS_SENHA: ${{ secrets.INLABS_SENHA }}
+        run: python coletor_normas.py docs
       - name: Salvar resultados no repositório
         run: |
           git config user.name "regulateca-bot"
