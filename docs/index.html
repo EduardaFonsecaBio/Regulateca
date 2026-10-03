@@ -135,7 +135,7 @@ return '<tr><td><b>'+r.a+'</b><small>'+r.o+'</small></td><td>'+r.p+'</td><td>'+r
 var DATA=null;
 function K(r){return encodeURIComponent((r.o+"|"+r.a).slice(0,120))}
 function ok(r){try{return !!localStorage.getItem("v:"+K(r))}catch(e){return false}}
-function info(){return '<p class="meta">'+(DATA?('Atualizado em '+DATA.atualizado+' · '+DATA.itens.length+' itens'+(DATA.coleta?' · Coleta: '+DATA.coleta:'')+(DATA.alertas.length?' · Alertas: '+DATA.alertas.join(' ; '):'')):'Dados de exemplo: o arquivo dados.json ainda não foi gerado.')+'</p>'}
+function info(){return '<p class="meta">'+(DATA?('Atualizado em '+DATA.atualizado+' · '+DATA.itens.length+' itens'+(DATA.coleta?' · Coleta: '+DATA.coleta:'')+(DATA.alertas.length?' · '+DATA.alertas.length+' reuniões com CAAEs diferentes entre pauta e extrato (normal quando itens entram ou saem da pauta) <details style="display:inline"><summary style="display:inline;cursor:pointer">ver</summary>'+DATA.alertas.join('<br>')+'</details>':'')):'Dados de exemplo: o arquivo dados.json ainda não foi gerado.')+'</p>'}
 function draw(){nav();if(S.sel)rep();else[lib,map,relogio,feed][S.tab]()}
 fetch("dados.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){DATA=j;
 L=j.itens.map(function(x){var s=!x.decisao||/retirado/i.test(x.decisao)?"Pendente":/^Informe/.test(x.decisao)?"Em andamento":"Concluído";return{a:x.assunto,o:x.orgao,p:x.pauta||x.reuniao,d:x.decisao||"Sem ata ou extrato ainda",pr:x.prazos,s:s,f:x.fontes,g:x.gatilhos}});
