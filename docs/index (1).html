@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><rect width='64' height='64' rx='14' fill='%23031926'/><path d='M22 48V16h13a9 9 0 0 1 0 18H22m12 0 11 14' fill='none' stroke='%2322ada4' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>REGULATECA</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F2F7F7;--panel:#fff;--ink:#031926;--mut:#557276;--line:#D6E2E3;--acc:#0B7F78;--accf:#22ada4;--accbg:#DDF3F1;--ok:#1B7F55;--okb:#DDF1E8;--bad:#B03A2A;--badb:#F8E1DC;--warn:#8F6209;--warnb:#F8EBCB;--hdr:#031926;--hdrt:#9DB8BA;--sh:0 1px 2px rgba(3,25,38,.06)}
+:root[data-theme="dark"]{--bg:#031926;--panel:#08283A;--ink:#E6F0F0;--mut:#8CA9AC;--line:#173B4B;--acc:#3CC9BF;--accbg:#0E3A45;--ok:#5CD6A0;--okb:#0F3A2C;--bad:#F59A8A;--badb:#44211B;--warn:#E8BB5A;--warnb:#3B2F12;--hdr:#021420;--sh:none}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:15px/1.5 "Public Sans",system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;margin:0;font-weight:600}
+header{background:var(--hdr);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px max(24px,calc((100% - 1680px)/2 + 24px))}
+.brand{display:flex;align-items:center;gap:14px}.brand svg{width:44px;height:44px;flex:none;border-radius:10px;box-shadow:0 0 0 1px #22ada455}
+header h1{font-size:28px;letter-spacing:.6px;color:#fff;line-height:1.1}header p{margin:2px 0 0;color:var(--hdrt);font-size:13px}
+.tg{font:inherit;font-size:13px;background:transparent;color:#fff;border:1px solid #557276;border-radius:20px;padding:6px 14px;cursor:pointer}.tg:hover{border-color:#22ada4}
+.warn,nav,main{max-width:1680px;margin-left:auto;margin-right:auto}
+.warn{margin-top:14px;width:calc(100% - 48px);padding:9px 14px;background:var(--warnb);color:var(--ink);border-left:3px solid var(--warn);border-radius:4px;font-size:13px}
+nav{display:flex;gap:6px;padding:14px 24px 0;overflow-x:auto}
+nav button{background:none;border:1px solid transparent;padding:8px 16px;font:inherit;color:var(--mut);cursor:pointer;border-radius:20px;white-space:nowrap}
+nav button:hover{color:var(--ink)}nav button[aria-selected=true]{background:var(--accbg);color:var(--acc);font-weight:600;border-color:var(--accf)}
+button:focus-visible,input:focus-visible,select:focus-visible,tr:focus-visible{outline:2px solid var(--accf);outline-offset:2px}
+main{padding:18px 24px 48px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+input,select{font:inherit;padding:8px 12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px}input[type=text],input:not([type]){flex:1;min-width:220px}
+.wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:var(--sh)}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th{text-align:left;font-weight:600;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--mut);padding:11px 14px;border-bottom:1px solid var(--line);background:var(--bg)}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:break-word}tr:last-child td{border-bottom:0}
+tr.row{cursor:pointer}tr.row:hover td,.rl tbody tr:hover td{background:var(--accbg)}
+td small{display:block;color:var(--mut);font-size:12.5px;margin-top:2px}
+.tag{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600;white-space:nowrap}
+.Vigente,.Concluído,.Baixo{background:var(--okb);color:var(--ok)}.Revogada,.Alto{background:var(--badb);color:var(--bad)}.Médio,.Pendente{background:var(--warnb);color:var(--warn)}
+.Emandamento,.Publicada,.Emanálise{background:var(--accbg);color:var(--acc)}.Aanalisar{background:var(--bg);color:var(--mut)}
+.rl{min-width:0;table-layout:fixed}.rl td b{font-weight:600}
+.cl{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}.cl.open{display:block}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accf);border-radius:10px;padding:10px 14px;box-shadow:var(--sh)}.stat b{display:block;font:600 26px/1.1 Newsreader,Georgia,serif}.stat span{color:var(--mut);font-size:12.5px}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;padding:0;list-style:none;font-size:12px;color:var(--mut)}.steps li{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:3px 10px}
+.rep{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;max-width:860px}
+.rep h2{font-size:24px;margin-bottom:4px}.rep h3{font-size:17px;margin:22px 0 6px}.rep p,.rep ul{margin:4px 0}.rep ul{padding-left:20px}
+.meta{color:var(--mut);font-size:13.5px;margin:4px 0}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:6px}.ba div{background:var(--panel);padding:8px 10px;font-size:14px}.ba b{display:block;font-size:12px;color:var(--mut)}
+.val{margin-top:22px;padding:10px 12px;background:var(--bg);border-radius:8px;font-size:13px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.val button{font:inherit;padding:6px 12px;border:0;background:var(--accf);color:#031926;font-weight:600;border-radius:8px;cursor:pointer}
+.feed{list-style:none;margin:0;padding:0;max-width:860px}.feed li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accf);border-radius:8px;padding:12px 16px;margin-bottom:10px}
+.feed li.empty{border-left-color:var(--line);color:var(--mut)}.feed b{font-family:Newsreader,Georgia,serif;font-size:17px}
+svg{width:100%;height:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}svg text{fill:var(--ink);font:12px "Public Sans",sans-serif}
+.leg{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--mut);margin:10px 0}
+@media (max-width:980px){.rl,.rl tbody,.rl tr,.rl td{display:block;width:100%}.rl thead,.rl colgroup{display:none}.rl tr{border-bottom:8px solid var(--bg);padding:6px 0}.rl td{border:0;padding:6px 14px}.rl td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--mut)}}
+@media (max-width:600px){header,nav,main{padding-left:14px;padding-right:14px}.warn{width:calc(100% - 28px)}.rep{padding:16px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="brand"><svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><rect width='64' height='64' rx='14' fill='#031926'/><path d='M22 48V16h13a9 9 0 0 1 0 18H22m12 0 11 14' fill='none' stroke='#22ada4' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg><div><h1>REGULATECA</h1><p>Biblioteca regulatória de pesquisa clínica · INAEP e Anvisa</p></div></div><button id="tg" class="tg" type="button">Modo escuro</button></header>
+<div class="warn">Protótipo com dados de exemplo. Relações, status e análises são ilustrativos e ainda não foram validados pelo texto integral das normas.</div>
+<nav role="tablist" id="nav"></nav>
+<main id="main"></main>
+<script>
+var D=[
+{id:"l14874",n:"Lei 14.874/2024",org:"Planalto",tipo:"Lei",st:"Vigente",data:"28/05/2024",em:"Pesquisa com seres humanos e Sistema Nacional de Ética em Pesquisa (cria a INAEP)",imp:"Alto"},
+{id:"c466",n:"Resolução CNS 466/2012",org:"CNS",tipo:"Resolução",st:"Vigente",data:"12/12/2012",em:"Diretrizes e normas para pesquisas envolvendo seres humanos",imp:"Médio"},
+{id:"c510",n:"Resolução CNS 510/2016",org:"CNS",tipo:"Resolução",st:"Vigente",data:"07/04/2016",em:"Pesquisas em Ciências Humanas e Sociais",imp:"Médio"},
+{id:"c196",n:"Resolução CNS 196/1996",org:"CNS",tipo:"Resolução",st:"Revogada",data:"10/10/1996",em:"Diretrizes anteriores sobre pesquisa com seres humanos",imp:"Baixo"},
+{id:"rdc9",n:"RDC 9/2015",org:"Anvisa",tipo:"RDC",st:"Vigente",data:"20/02/2015",em:"Regulamento para ensaios clínicos com medicamentos no Brasil",imp:"Alto"},
+{id:"v16",n:"Voto 16/2026 INAEP",org:"INAEP",tipo:"Voto",st:"Em análise",data:"2026",em:"Proposta de resolução sobre regulamentação de biobancos",imp:"Médio"}];
+var R={l14874:{resumo:"Institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos e configura a INAEP como instância nacional, reorganizando a governança da ética em pesquisa.",
+rel:[["Regulamenta","Voto 16/2026 INAEP",0],["Possível obsolescência parcial de","Resolução CNS 466/2012",1],["Possível obsolescência parcial de","Resolução CNS 510/2016",1]],
+atores:"Patrocinadores, CROs, centros de pesquisa, CEPs, investigadores",procs:"Submissão e tramitação ética de protocolos, recursos de análise ética, credenciamento de CEPs",
+ba:[["Antes","Fluxo ético estruturado por resoluções do CNS (sistema CEP/CONEP)."],["Depois","Fluxo ético conduzido pelo sistema criado em lei, com a INAEP como instância nacional."]],
+just:"Altera a base legal e a governança do fluxo ético que antecede e acompanha a submissão à Anvisa.",
+plano:["Mapear POPs que citam CEP/CONEP e CNS 466/2012","Acompanhar resoluções da INAEP que regulamentam a lei","Revisar templates de submissão ética"],
+atencao:"Definir quais trechos das resoluções do CNS seguem aplicáveis até a regulamentação completa. Considerar consulta formal à INAEP."}};
+var N=[["27/08/2026","INAEP · 12ª Reunião Ordinária","Extrato de deliberação: recursos de análise ética e renovação de credenciamento de CEPs."],
+["14 e 21/08/2026","INAEP · 11ª Reunião Ordinária","Informes sobre o GT de Ciências Humanas e Sociais e a nova plataforma de pesquisa com seres humanos; relatório de fiscalização aprovado; guia de IA retirado de pauta."],
+["30/07/2026","INAEP · 10ª Reunião Ordinária","Tratou do Guia de Diretrizes Éticas para uso de IA em pesquisas com seres humanos. Conferir a deliberação no extrato completo."]];
+var G={nodes:{c196:[80,180],c466:[250,180],c510:[250,60],l14874:[450,180],rdc9:[450,310],v16:[620,60]},
+edges:[["c466","c196","revoga",0],["c510","c466","complementa",0],["l14874","c466","obsolescência parcial?",1],["l14874","c510","obsolescência parcial?",1],["rdc9","l14874","relacionada",0],["v16","l14874","regulamenta",0]]};
+var T=["Biblioteca","Mapa regulatório","Relógio Regulatório","Novidades"],S={tab:0,sel:null,q:"",org:"",st:""};
+var $=function(i){return document.getElementById(i)};
+function tag(s){return '<span class="tag '+s.replace(" ","")+'">'+s+'</span>'}
+function doc(i){return D.filter(function(d){return d.id===i})[0]}
+function nav(){$("nav").innerHTML=T.map(function(t,i){return '<button role="tab" aria-selected="'+(S.tab===i&&!S.sel)+'" data-t="'+i+'">'+t+'</button>'}).join("");
+[].forEach.call($("nav").children,function(b){b.onclick=function(){S.tab=+b.dataset.t;S.sel=null;draw()}})}
+function lib(){var o=function(k){return D.map(function(d){return d[k]}).filter(function(v,i,a){return a.indexOf(v)===i})};
+var rows=D.filter(function(d){return(!S.org||d.org===S.org)&&(!S.st||d.st===S.st)&&(d.n+d.em).toLowerCase().indexOf(S.q.toLowerCase())>-1});
+$("main").innerHTML='<div class="bar"><input id="q" placeholder="Buscar por número ou assunto" value="'+S.q+'" aria-label="Buscar"><select id="o" aria-label="Órgão"><option value="">Todos os órgãos</option>'+o("org").map(function(v){return '<option'+(S.org===v?' selected':'')+'>'+v+'</option>'}).join("")+'</select><select id="s" aria-label="Status"><option value="">Todos os status</option>'+o("st").map(function(v){return '<option'+(S.st===v?' selected':'')+'>'+v+'</option>'}).join("")+'</select></div><div class="wrap"><table><tr><th>Documento</th><th>Órgão</th><th>Data</th><th>Status</th><th>Impacto</th></tr>'+
+(rows.length?rows.map(function(d){return '<tr class="row" tabindex="0" data-i="'+d.id+'"><td><b>'+(d.link?'<a href="'+d.link+'" target="_blank" rel="noopener" style="color:var(--acc)" onclick="event.stopPropagation()">'+d.n+'</a>':d.n)+'</b><small>'+d.em+'</small></td><td>'+d.org+'</td><td>'+d.data+'</td><td>'+tag(d.st)+'</td><td>'+tag(d.imp)+'</td></tr>'}).join(""):'<tr><td colspan="5">Nenhum documento encontrado. Limpe os filtros para ver toda a biblioteca.</td></tr>')+'</table></div>';
+$("q").oninput=function(e){S.q=e.target.value;var p=e.target.selectionStart;lib();$("q").focus();$("q").setSelectionRange(p,p)};
+$("o").onchange=function(e){S.org=e.target.value;lib()};$("s").onchange=function(e){S.st=e.target.value;lib()};
+[].forEach.call(document.querySelectorAll(".row"),function(r){r.onclick=function(){S.sel=r.dataset.i;draw()};r.onkeydown=function(e){if(e.key==="Enter"){S.sel=r.dataset.i;draw()}}})}
+function rep(){var d=doc(S.sel),r=R[S.sel],h='<p><button id="back" style="font:inherit;background:none;border:0;color:var(--acc);cursor:pointer;padding:0 0 10px">Voltar à biblioteca</button></p><div class="rep"><h2>'+d.n+'</h2><p class="meta">'+d.tipo+' · '+d.org+' · '+d.data+' · '+tag(d.st)+'</p>';
+if(!r){h+='<h3>Relatório ainda não gerado</h3><p>Na versão completa, o relatório de impacto deste documento será gerado automaticamente a partir do texto integral e ficará disponível para validação.</p></div>'}
+else{h+='<h3>Resumo executivo</h3><p>'+r.resumo+'</p><h3>Relações normativas</h3><ul>'+r.rel.map(function(x){return '<li>'+x[0]+' <b>'+x[1]+'</b>'+(x[2]?' <span class="meta">(sugestão da IA, requer validação)</span>':'')+'</li>'}).join("")+'</ul>'+
+'<h3>Análise de impacto</h3><p><b>Atores afetados:</b> '+r.atores+'</p><p><b>Processos afetados:</b> '+r.procs+'</p><div class="ba">'+r.ba.map(function(b){return '<div><b>'+b[0]+'</b>'+b[1]+'</div>'}).join("")+'</div>'+
+'<h3>Classificação de impacto</h3><p>'+tag(d.imp)+' '+r.just+'</p><h3>Plano de adequação sugerido</h3><ul>'+r.plano.map(function(p){return '<li>'+p+'</li>'}).join("")+'</ul><h3>Pontos de atenção</h3><p>'+r.atencao+'</p>'+
+'<div class="val"><span id="vs"><b>Status:</b> Rascunho da IA</span><button id="vb">Validar relatório</button></div></div>'}
+$("main").innerHTML=h;$("back").onclick=function(){S.sel=null;draw()};
+if($("vb"))$("vb").onclick=function(){$("vs").innerHTML="<b>Status:</b> Validado pela equipe regulatória";$("vb").remove()}}
+function map(){if(NORMAS)return mapaNormas();var sc={Vigente:"var(--ok)",Revogada:"var(--bad)","Em análise":"var(--acc)"},s='<svg viewBox="0 0 720 370" role="img" aria-label="Mapa regulatório"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--mut)"/></marker></defs>';
+G.edges.forEach(function(e){var a=G.nodes[e[0]],b=G.nodes[e[1]],dx=b[0]-a[0],dy=b[1]-a[1],l=Math.sqrt(dx*dx+dy*dy),u=[dx/l,dy/l],k=Math.min(75/Math.abs(u[0]||.001),24/Math.abs(u[1]||.001)),x1=a[0]+u[0]*k,y1=a[1]+u[1]*k,x2=b[0]-u[0]*k,y2=b[1]-u[1]*k;
+s+='<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="var(--mut)" stroke-width="1.5" '+(e[3]?'stroke-dasharray="5 4" ':'')+'marker-end="url(#a)"/><text x="'+(x1+x2)/2+'" y="'+((y1+y2)/2-5)+'" text-anchor="middle">'+e[2]+'</text>'});
+Object.keys(G.nodes).forEach(function(i){var p=G.nodes[i],d=doc(i);s+='<g tabindex="0" style="cursor:pointer" data-i="'+i+'"><rect x="'+(p[0]-75)+'" y="'+(p[1]-24)+'" width="150" height="48" rx="4" fill="var(--panel)" stroke="'+sc[d.st]+'" stroke-width="2.5"/><text x="'+p[0]+'" y="'+(p[1]-2)+'" text-anchor="middle" style="font-weight:600">'+d.n.replace("Resolução ","Res. ")+'</text><text x="'+p[0]+'" y="'+(p[1]+15)+'" text-anchor="middle" style="fill:var(--mut)">'+d.st+'</text></g>'});
+$("main").innerHTML='<div class="leg"><span style="color:var(--ok)">Borda verde: vigente</span><span style="color:var(--bad)">Borda vermelha: revogada</span><span style="color:var(--acc)">Borda azul: em análise</span><span>Linha tracejada: sugestão da IA a validar</span></div>'+s+'</svg><p class="meta">Clique em um documento para abrir o relatório de impacto.</p>';
+[].forEach.call(document.querySelectorAll("svg g"),function(g){g.onclick=function(){S.sel=g.dataset.i;draw()};g.onkeydown=function(e){if(e.key==="Enter"){S.sel=g.dataset.i;draw()}}})}
+function feed(){$("main").innerHTML='<ul class="feed">'+N.map(function(n){return '<li><span class="meta">'+n[0]+'</span><br><b>'+n[1]+'</b><p>'+n[2]+'</p></li>'}).join("")+'<li class="empty">Anvisa (Diretoria Colegiada, GGMED e GPESQ): as novidades aparecerão aqui quando a coleta automática for configurada.</li></ul>'}
+var L=[
+{a:"Assunto X (exemplo hipotético do seu cenário)",o:"INAEP",p:"Pauta de 27/08/2026",d:"Deliberada a abertura de consulta pública de 45 dias",pz:45,i:"27/08/2026",s:"Em andamento",f:"Exemplo ilustrativo",g:"-"},
+{a:"Guia de Diretrizes Éticas para uso de IA em pesquisa",o:"INAEP",p:"11ª RO, item 2.1 (14/08/2026)",d:"Item retirado de pauta. Conferir o que foi deliberado na 10ª RO (30/07/2026).",s:"Pendente",f:"Pauta e extrato 11ª RO",g:"pesquisa com seres humanos"},
+{a:"GT de Ciências Humanas e Sociais (GT CHS)",o:"INAEP",p:"11ª RO, item 1.1",d:"Informe: GT instituído pelo Voto 20/2026 em 02/07/2026; avaliar ampliar a composição",s:"Em andamento",f:"Extrato 11ª RO",g:"pesquisa com seres humanos"},
+{a:"Nova plataforma de pesquisa com seres humanos",o:"INAEP",p:"11ª RO, item 1.2",d:"Primeira versão disponibilizada para testes e coleta de contribuições",s:"Em andamento",f:"Extrato 11ª RO",g:"pesquisa com seres humanos"},
+{a:"Fiscalização: relatório de apuração de denúncias",o:"INAEP",p:"11ª RO, item 2.3",d:"Colegiado aprovou por unanimidade os encaminhamentos do relatório de fiscalização",s:"Concluído",f:"Extrato 11ª RO",g:"pesquisa com seres humanos"},
+{a:"Recursos de análise ética",o:"INAEP",p:"11ª RO, item 3.1",d:"1 deferido com ressalvas, 1 indeferido, 3 retirados de pauta. Os CAAEs da pauta e do extrato não coincidem: conferir.",s:"Pendente",f:"Pauta e extrato 11ª RO",g:"análise ética"},
+{a:"Regulamentação de biobancos (Voto 16/2026)",o:"INAEP",p:"8ª RO 2026",d:"Pauta previa referendar decisão ad referendum sobre nova resolução de biobancos",s:"Em andamento",f:"Pauta 8ª RO",g:"pesquisa com seres humanos"},
+{a:"Segurança de estudos de bioequivalência com Olaparibe",o:"INAEP",p:"7ª e 8ª RO 2026",d:"Proposta de posicionamento; possível reunião extraordinária. Conferir ata.",s:"Pendente",f:"Pautas 7ª e 8ª RO",g:"estudos de bioequivalência"},
+{a:"Estudos clínicos com PMMA",o:"Anvisa",p:"ROP 10/2026 (10/06/2026), item 1.2",d:"Catepec discutiria no mesmo dia protocolos de novos estudos clínicos; CFM vedou uso estético (Res. CFM 2.461/2026)",s:"Em andamento",f:"Ata ROP 10/2026",g:"estudos clínicos; Catepec"},
+{a:"Nota Técnica 60/2026: intercambialidade de biossimilares",o:"Anvisa",p:"ROP 10/2026, item 1.1",d:"Publicação no portal anunciada para os dias seguintes. Confirmar.",s:"Pendente",f:"Ata ROP 10/2026",g:"GGBIO"},
+{a:"ICH M18: eficácia comparativa de biossimilares",o:"Anvisa",p:"ROP 10/2026, item 1.2",d:"Informe: Anvisa é coordenadora regulatória do grupo que elabora o guia",s:"Em andamento",f:"Ata ROP 10/2026",g:"GGBIO; estudos clínicos"},
+{a:"IN 292/2024: reliance para CBPF",o:"Anvisa",p:"ROP 10/2026, item 2.1",d:"Aprovada por unanimidade a abertura de processo e a alteração da IN; dispensa de AIR e CP",s:"Concluído",f:"Ata ROP 10/2026",g:"menção a GGMED e GGBIO"},
+{a:"IN 258/2023: lista de impurezas qualificadas",o:"Anvisa",p:"ROP 15/2026 (19/08/2026), item 2.5",d:"Proposta de IN com dispensa de AIR e CP. Ata ainda não disponível.",s:"Pendente",f:"Pauta ROP 15/2026",g:"GGMED"},
+{a:"RDC 870/2024: gases medicinais",o:"Anvisa",p:"ROP 15/2026, item 2.7",d:"Proposta de RDC por urgência, com dispensa de AIR, CP e ARR. Ata ainda não disponível.",s:"Pendente",f:"Pauta ROP 15/2026",g:"GGMED"},
+{a:"Recursos administrativos de interesse da GGMED",o:"Anvisa",p:"ROP 10/2026 (item 4.2.1.1); ROP 15/2026 (itens 3.2.1.1 e 3.5.1.1)",d:"ROP 10: efeito suspensivo retirado (CD 566/2026). ROP 15: pendentes de ata.",s:"Pendente",f:"Ata ROP 10; pauta ROP 15",g:"GGMED"}];
+function pd(s){var x=s.split("/");return new Date(+x[2],+x[1]-1,+x[0])}
+function fd(d){return ("0"+d.getDate()).slice(-2)+"/"+("0"+(d.getMonth()+1)).slice(-2)+"/"+d.getFullYear()}
+function n2(s){return String(s==null?"":s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
+function relogio(){var h=new Date();h.setHours(0,0,0,0);var q=n2(S.rq||"");
+var rows=L.filter(function(r){return(!S.rs||r.s===S.rs)&&(!q||n2(r.a+" "+r.d+" "+r.g+" "+r.p+" "+r.o).indexOf(q)>-1)});
+var c=function(s){return L.filter(function(r){return r.s===s}).length};
+var st='<div class="stats">'+[["Itens monitorados",L.length],["Pendentes",c("Pendente")],["Em andamento",c("Em andamento")],["Normas do DOU",NORMAS?NORMAS.normas.length:0]].map(function(x){return '<div class="stat"><b>'+x[1]+'</b><span>'+x[0]+'</span></div>'}).join("")+'</div>';
+var bar='<div class="bar"><input id="rq" placeholder="Buscar no relógio" value="'+esc(S.rq||"")+'" aria-label="Buscar"><select id="rs" aria-label="Situação"><option value="">Todas as situações</option>'+["Pendente","Em andamento","Concluído","Publicada"].map(function(v){return '<option'+(S.rs===v?' selected':'')+'>'+v+'</option>'}).join("")+'</select></div>';
+var cols=["44px","23%","11%","30%","12%","9%","auto"],th=["","Assunto","Pauta","Ata ou deliberação","Prazos","Situação","Fonte e gatilho"];
+$("main").innerHTML=info()+'<ul class="steps"><li>1. Coleta</li><li>2. Leitura de itens e deliberações</li><li>3. Detecção de prazos</li><li>4. Cálculo de datas</li><li>5. Validação pela equipe</li></ul>'+st+bar+
+'<div class="wrap"><table class="rl"><colgroup>'+cols.map(function(w){return '<col style="width:'+w+'">'}).join("")+'</colgroup><thead><tr>'+th.map(function(t){return '<th>'+t+'</th>'}).join("")+'</tr></thead><tbody>'+
+(rows.length?rows.map(function(r){var pz=esc(r.pr||"-");if(r.pz){var e=pd(r.i);e.setDate(e.getDate()+r.pz);var n=Math.round((e-h)/864e5);pz=r.pz+" dias<small>"+esc(r.i)+" até "+fd(e)+" · "+(n<0?"encerrado":"restam "+n)+"</small>"}
+return '<tr><td data-label="Validado"><input type="checkbox" class="vk" data-k="'+K(r)+'" '+(ok(r)?'checked ':'')+'aria-label="Validado" style="min-width:0;flex:none"></td><td data-label="Assunto"><div class="cl"><b>'+esc(r.a)+'</b></div><small>'+r.o+'</small></td><td data-label="Pauta">'+esc(r.p)+'</td><td data-label="Ata ou deliberação"><div class="cl">'+esc(r.d)+'</div></td><td data-label="Prazos">'+pz+'</td><td data-label="Situação">'+tag(r.s)+'</td><td data-label="Fonte e gatilho">'+esc(r.f)+'<small>'+esc(r.g||"-")+'</small></td></tr>'}).join(""):'<tr><td colspan="7">Nenhum item encontrado. Limpe a busca ou o filtro.</td></tr>')+
+'</tbody></table></div><p class="meta">Clique em um texto para expandir ou recolher. Gatilho: termo ou área que fez o robô sinalizar o item. As linhas precisam de validação pela equipe.</p>';
+[].forEach.call(document.querySelectorAll(".vk"),function(c){c.onchange=function(){try{localStorage.setItem("v:"+c.dataset.k,c.checked?"1":"")}catch(e){}}});
+[].forEach.call(document.querySelectorAll(".cl"),function(c){c.onclick=function(){c.classList.toggle("open")}});
+$("rq").oninput=function(e){S.rq=e.target.value;var p=e.target.selectionStart;relogio();$("rq").focus();$("rq").setSelectionRange(p,p)};$("rs").onchange=function(e){S.rs=e.target.value;relogio()}}
+var DATA=null,NORMAS=null;
+function K(r){return encodeURIComponent((r.o+"|"+r.a).slice(0,120))}
+function ok(r){try{return !!localStorage.getItem("v:"+K(r))}catch(e){return false}}
+function info(){var al=DATA&&DATA.alertas.length?'<details style="margin:6px 0"><summary style="cursor:pointer">'+DATA.alertas.length+' reuniões com CAAEs diferentes entre pauta e extrato (normal quando itens entram ou saem da pauta)</summary>'+DATA.alertas.join('<br>')+'</details>':'';
+return '<p class="meta">'+(DATA?('Atualizado em '+DATA.atualizado+' · '+DATA.itens.length+' itens de pautas e atas'+(DATA.coleta?' · Coleta: '+DATA.coleta:'')):'Dados de exemplo: o arquivo dados.json ainda não foi gerado.')+'</p><p class="meta">'+(NORMAS?'Normas do DOU: '+NORMAS.normas.length+(NORMAS.coleta?' ('+NORMAS.coleta+')':'')+' · atualizado em '+esc(NORMAS.atualizado):'Normas do DOU: ainda sem dados (o arquivo normas.json não foi gerado pelo robô)')+'</p>'+al}
+function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function orgC(o){return esc(String(o||"").split("/")[0].trim().replace("Agência Nacional de Vigilância Sanitária","Anvisa").replace("Ministério da Saúde","MS").replace("Conselho Nacional de Saúde","CNS").replace("Presidência da República","Presidência"))}
+function mapaNormas(){var ns=D.slice(0,24),c=3,s='<svg viewBox="0 0 720 '+(Math.ceil(ns.length/c)*70+30)+'" role="img" aria-label="Mapa regulatório">';
+ns.forEach(function(d,k){var x=20+(k%c)*235,y=20+Math.floor(k/c)*70;s+='<g tabindex="0" style="cursor:pointer" data-i="'+d.id+'"><rect x="'+x+'" y="'+y+'" width="215" height="52" rx="4" fill="var(--panel)" stroke="var(--acc)" stroke-width="2"/><text x="'+(x+10)+'" y="'+(y+22)+'" style="font-weight:600">'+d.n.slice(0,30)+'</text><text x="'+(x+10)+'" y="'+(y+40)+'" style="fill:var(--mut)">'+d.org+' · '+d.data+'</text></g>'});
+$("main").innerHTML='<p class="meta">As '+ns.length+' normas mais recentes do DOU. As ligações de altera e revoga entram na etapa 2, junto com a análise de impacto.</p>'+s+'</svg>';
+[].forEach.call(document.querySelectorAll("svg g"),function(g){g.onclick=function(){S.sel=g.dataset.i;draw()};g.onkeydown=function(e){if(e.key==="Enter"){S.sel=g.dataset.i;draw()}}})}
+function refaz(){var rows=DATA?DATA.itens.map(function(x){var s=!x.decisao||/retirado/i.test(x.decisao)?"Pendente":/^Informe/.test(x.decisao)?"Em andamento":"Concluído";return{a:x.assunto,o:x.orgao,p:x.pauta||x.reuniao,d:x.decisao||"Sem ata ou extrato ainda",pr:x.prazos,s:s,f:x.fontes,g:x.gatilhos}}):L;
+if(NORMAS){rows=rows.concat(NORMAS.normas.map(function(n){return{a:n.titulo,o:orgC(n.orgao),p:"DOU "+n.data,d:n.ementa||"-",pr:"-",s:"Publicada",f:"DOU",g:n.gatilhos}}));
+D=NORMAS.normas.map(function(n){return{id:esc(n.id),n:esc(n.titulo),org:orgC(n.orgao),tipo:esc(n.tipo),st:"Publicada",data:esc(n.data),em:esc((n.ementa||"").slice(0,200)),imp:"A analisar",link:/^https?:/.test(n.link||"")?esc(n.link):""}})}
+L=rows}
+function draw(){nav();if(S.sel)rep();else[lib,map,relogio,feed][S.tab]()}
+function tema(t){document.documentElement.setAttribute("data-theme",t);try{localStorage.setItem("tema",t)}catch(e){}$("tg").textContent=t==="dark"?"Modo claro":"Modo escuro"}
+(function(){var t;try{t=localStorage.getItem("tema")}catch(e){}if(!t)t=(typeof matchMedia!=="undefined"&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";tema(t)})();
+$("tg").onclick=function(){tema(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark")};
+function ld(u){return fetch(u,{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+Promise.all([ld("dados.json"),ld("normas.json")]).then(function(a){DATA=a[0];NORMAS=a[1];if(!DATA&&!NORMAS)return;refaz();S.tab=2;S.sel=null;
+document.querySelector(".warn").textContent="O Relógio e, quando disponível, a Biblioteca e o Mapa usam dados reais lidos de pautas, atas, extratos e do DOU. Valide tudo antes de usar.";draw()});
+draw();
+</script>
+</body>
+</html>
