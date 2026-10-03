@@ -1,0 +1,152 @@
+{
+ "atualizado": "03/10/2026 00:49",
+ "coleta": "0 documentos novos, 7 falhas",
+ "alertas": [
+  "11ª RO INAEP: CAAEs diferem entre pauta e extrato (só na pauta: 94677325.0.0000.9167; só no extrato: 88242825.9.1001.5335, 92173725.9.0000.001)"
+ ],
+ "itens": [
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 10/2026",
+   "assunto": "- O Diretor-Presidente Leandro Safatle destacou três marcos recentes da agenda global de saúde pública – o Dia Mundial Sem Tabaco, o Dia Mundial do Meio Ambient",
+   "pauta": "",
+   "decisao": "Informe (sem deliberação)",
+   "prazos": "",
+   "gatilhos": "ensaio clinico; estudos clinicos; menção GGMED; pesquisa clinica",
+   "relevancia": "alta",
+   "fontes": "ata"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "11ª RO INAEP",
+   "assunto": "Informe sobre o Grupo de Trabalho para a regulamentação as especificidades das pesquisas das áreas de Ciências Humanas e Sociais (GT CHS).",
+   "pauta": "11ª RO INAEP item 1.1 (14/08/2026)",
+   "decisao": "Informe (sem deliberação)",
+   "prazos": "",
+   "gatilhos": "etica em pesquisa; pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "extrato"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "11ª RO INAEP",
+   "assunto": "Informe sobre o desenvolvimento da plataforma de pesquisa com seres humanos.",
+   "pauta": "11ª RO INAEP item 1.2 (14/08/2026)",
+   "decisao": "Informe (sem deliberação)",
+   "prazos": "",
+   "gatilhos": "pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "extrato, pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "11ª RO INAEP",
+   "assunto": "Fiscalização - Relatório de apuração sobre denúncias envolvendo pesquisas com seres humanos.",
+   "pauta": "11ª RO INAEP item 2.3 (14/08/2026)",
+   "decisao": "Deliberado: O relator apresentou ao Colegiado o relatório de apuração referente à denúncia envolvendo pesquisa com seres humanos, com destaque para os fatos relacionados ao participante da pesquisa. Após a discussão da matéria, o Colegiado deliberou e aprovou, por unanimidade, com fundamento no relatório de ﬁscalização",
+   "prazos": "",
+   "gatilhos": "pesquisa com seres humanos; pesquisas com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "extrato, pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "11ª RO INAEP",
+   "assunto": "Recursos de análise ética.",
+   "pauta": "11ª RO INAEP item 3.1 (14/08/2026)",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por maioria, pelo deferimento com ressalvas do recurso de análise ética do protocolo de pesquisa CAAE: 96168526.9.0000.8130. O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, pelo indeferimento do recurso de anál",
+   "prazos": "",
+   "gatilhos": "analise etica; caae; etica em pesquisa; protocolo de pesquisa",
+   "relevancia": "alta",
+   "fontes": "extrato, pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "11ª RO INAEP",
+   "assunto": "Guia de Diretrizes Éticas para uso de IA em Pesquisa com Seres Humanos.",
+   "pauta": "11ª RO INAEP item 2.1 (14/08/2026)",
+   "decisao": "Item retirado de pauta",
+   "prazos": "",
+   "gatilhos": "pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 10/2026",
+   "assunto": "Intercambialidade de produtos registrados pela via de desenvolvimento por comparabilidade (biossimilares) e o medicamento biológico comparador.",
+   "pauta": "",
+   "decisao": "Informe (sem deliberação)",
+   "prazos": "",
+   "gatilhos": "área GGBIO",
+   "relevancia": "média",
+   "fontes": "ata"
+  },
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 10/2026",
+   "assunto": "Recurso de Instituto Alma Viva Ltda.",
+   "pauta": "ROP 10/2026 item 4.2.1.1 (10/6/2026)",
+   "decisao": "A Diretoria Colegiada decidiu, por unanimidade, RETIRAR o efeito suspensivo do recurso, nos termos do voto do Relator – Voto nº 173/2026/SEI/DIRE4/Anvisa.",
+   "prazos": "",
+   "gatilhos": "seção GGMED",
+   "relevancia": "média",
+   "fontes": "ata, pauta"
+  },
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 15/2026",
+   "assunto": "a ) Proposta de Abertura única de Processo Administrativo de Regulação para Assuntos de Atualização Periódica; e b) Proposta de Instrução Normativa - IN para alterar a IN nº 258, de 16 de outubro de 2023, que define a Lista de impurezas qualificadas e seus res",
+   "pauta": "ROP 15/2026 item 2.5 (19/8/2026)",
+   "decisao": "",
+   "prazos": "Dispensa de consulta pública",
+   "gatilhos": "área GGMED",
+   "relevancia": "média",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 15/2026",
+   "assunto": "a) Proposta de Abertura de Processo Administrativo de Regulação; e b) Proposta de Resolução da",
+   "pauta": "ROP 15/2026 item 2.7 (19/8/2026)",
+   "decisao": "",
+   "prazos": "Dispensa de consulta pública",
+   "gatilhos": "área GGMED",
+   "relevancia": "média",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 15/2026",
+   "assunto": "Recurso de Cazi Química Farmacêutica Indústria e Comércio Ltda.",
+   "pauta": "ROP 15/2026 item 3.2.1.1 (19/8/2026)",
+   "decisao": "",
+   "prazos": "",
+   "gatilhos": "seção GGMED",
+   "relevancia": "média",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 15/2026",
+   "assunto": "Recurso de Aché Laboratórios Farmacêuticos S.A.",
+   "pauta": "ROP 15/2026 item 3.5.1.1 (19/8/2026)",
+   "decisao": "",
+   "prazos": "",
+   "gatilhos": "seção GGMED",
+   "relevancia": "média",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "Anvisa (Dicol)",
+   "reuniao": "ROP 10/2026",
+   "assunto": "a) Proposta de Abertura de Processo Administrativo de Regulação; e b) Proposta de Instrução Normativa - IN para alterar a IN nº 292, de 2 de maio de 2024, que dispõe sobre os critérios e procedimentos especíﬁcos para deﬁnição das Autoridades Reguladoras Estran",
+   "pauta": "",
+   "decisao": "A Diretoria Colegiada decidiu, por unanimidade, APROVAR a Abertura de Processo Administrativo de Regulação e a Instrução Normativa, nos termos do voto do Relator. Ata da Reunião Ordinária Pública da Dicol 4423625 SEI 25351.900101/2026-71 / pg. 11",
+   "prazos": "Dispensa de consulta pública",
+   "gatilhos": "menção GGBIO; menção GGMED",
+   "relevancia": "baixa",
+   "fontes": "ata"
+  }
+ ]
+}
