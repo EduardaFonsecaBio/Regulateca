@@ -2,64 +2,59 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><rect width='64' height='64' rx='14' fill='%23031926'/><path d='M22 48V16h13a9 9 0 0 1 0 18H22m12 0 11 14' fill='none' stroke='%2322ada4' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>REGULATECA</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap">
 <style>
-:root{--bg:#EEF2F4;--panel:#fff;--ink:#16293B;--mut:#5A6B7A;--line:#D3DCE2;--acc:#1D5FA8;--ok:#1E7A4F;--bad:#A8402F;--warn:#9A6A12;--okb:#DDF0E6;--badb:#F6E0DB;--warnb:#F6EACB;--blub:#DCE8F5;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A24;--panel:#172635;--ink:#E6EDF3;--mut:#93A4B3;--line:#2B3F50;--acc:#6FAEEF;--ok:#5CCB93;--bad:#F08A78;--warn:#E5B44F;--okb:#17382B;--badb:#44211B;--warnb:#3E3012;--blub:#1B3550}}
-:root[data-theme="dark"]{--bg:#0F1A24;--panel:#172635;--ink:#E6EDF3;--mut:#93A4B3;--line:#2B3F50;--acc:#6FAEEF;--ok:#5CCB93;--bad:#F08A78;--warn:#E5B44F;--okb:#17382B;--badb:#44211B;--warnb:#3E3012;--blub:#1B3550}
-html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
-*{box-sizing:border-box}
-body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:15px/1.5 "Public Sans",system-ui,sans-serif}
+:root{--bg:#F2F7F7;--panel:#fff;--ink:#031926;--mut:#557276;--line:#D6E2E3;--acc:#0B7F78;--accf:#22ada4;--accbg:#DDF3F1;--ok:#1B7F55;--okb:#DDF1E8;--bad:#B03A2A;--badb:#F8E1DC;--warn:#8F6209;--warnb:#F8EBCB;--hdr:#031926;--hdrt:#9DB8BA;--sh:0 1px 2px rgba(3,25,38,.06)}
+:root[data-theme="dark"]{--bg:#031926;--panel:#08283A;--ink:#E6F0F0;--mut:#8CA9AC;--line:#173B4B;--acc:#3CC9BF;--accbg:#0E3A45;--ok:#5CD6A0;--okb:#0F3A2C;--bad:#F59A8A;--badb:#44211B;--warn:#E8BB5A;--warnb:#3B2F12;--hdr:#021420;--sh:none}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:15px/1.5 "Public Sans",system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 h1,h2,h3{font-family:Newsreader,Georgia,serif;margin:0;font-weight:600}
-header{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;padding:18px 24px 8px}
-header h1{font-size:30px;letter-spacing:.5px}
-header p{margin:0;color:var(--mut);font-size:14px}
-.warn{margin:6px 24px 0;padding:8px 12px;background:var(--warnb);color:var(--ink);border-left:3px solid var(--warn);font-size:13px}
-nav{display:flex;gap:4px;padding:14px 24px 0;border-bottom:1px solid var(--line);overflow-x:auto}
-nav button{background:none;border:0;padding:9px 14px;font:inherit;color:var(--mut);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
-nav button[aria-selected=true]{color:var(--ink);border-color:var(--acc);font-weight:600}
-button:focus-visible,input:focus-visible,select:focus-visible,tr:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
-main{padding:20px 24px 40px;max-width:1100px}
+header{background:var(--hdr);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px max(24px,calc((100% - 1680px)/2 + 24px))}
+.brand{display:flex;align-items:center;gap:14px}.brand svg{width:44px;height:44px;flex:none;border-radius:10px;box-shadow:0 0 0 1px #22ada455}
+header h1{font-size:28px;letter-spacing:.6px;color:#fff;line-height:1.1}header p{margin:2px 0 0;color:var(--hdrt);font-size:13px}
+.tg{font:inherit;font-size:13px;background:transparent;color:#fff;border:1px solid #557276;border-radius:20px;padding:6px 14px;cursor:pointer}.tg:hover{border-color:#22ada4}
+.warn,nav,main{max-width:1680px;margin-left:auto;margin-right:auto}
+.warn{margin-top:14px;width:calc(100% - 48px);padding:9px 14px;background:var(--warnb);color:var(--ink);border-left:3px solid var(--warn);border-radius:4px;font-size:13px}
+nav{display:flex;gap:6px;padding:14px 24px 0;overflow-x:auto}
+nav button{background:none;border:1px solid transparent;padding:8px 16px;font:inherit;color:var(--mut);cursor:pointer;border-radius:20px;white-space:nowrap}
+nav button:hover{color:var(--ink)}nav button[aria-selected=true]{background:var(--accbg);color:var(--acc);font-weight:600;border-color:var(--accf)}
+button:focus-visible,input:focus-visible,select:focus-visible,tr:focus-visible{outline:2px solid var(--accf);outline-offset:2px}
+main{padding:18px 24px 48px}
 .bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
-input,select{font:inherit;padding:8px 10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:4px}
-input{flex:1;min-width:200px}
-.wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line)}
+input,select{font:inherit;padding:8px 12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px}input[type=text],input:not([type]){flex:1;min-width:220px}
+.wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:var(--sh)}
 table{border-collapse:collapse;width:100%;min-width:640px}
-th{text-align:left;font-weight:600;font-size:13px;color:var(--mut);padding:10px 12px;border-bottom:1px solid var(--line)}
-td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-tr.row{cursor:pointer}tr.row:hover{background:var(--bg)}
-td small{display:block;color:var(--mut)}
-.tag{display:inline-block;padding:2px 9px;border-radius:10px;font-size:12px;font-weight:600;white-space:nowrap}
-.Vigente{background:var(--okb);color:var(--ok)}.Revogada{background:var(--badb);color:var(--bad)}.Emanálise{background:var(--blub);color:var(--acc)}
-.Alto{background:var(--badb);color:var(--bad)}.Médio{background:var(--warnb);color:var(--warn)}.Baixo{background:var(--okb);color:var(--ok)}
-.Emandamento{background:var(--blub);color:var(--acc)}.Concluído{background:var(--okb);color:var(--ok)}.Pendente{background:var(--warnb);color:var(--warn)}
-.Publicada{background:var(--blub);color:var(--acc)}.Aanalisar{background:var(--bg);color:var(--mut)}
-.steps{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none;font-size:13px;color:var(--mut)}
-.steps li{background:var(--panel);border:1px solid var(--line);padding:6px 10px}
-.rep{background:var(--panel);border:1px solid var(--line);padding:22px 26px;max-width:820px}
-.rep h2{font-size:24px;margin-bottom:4px}
-.rep h3{font-size:17px;margin:22px 0 6px}
-.rep p,.rep ul{margin:4px 0}.rep ul{padding-left:20px}
-.meta{color:var(--mut);font-size:14px}
-.ba{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:6px}
-.ba div{background:var(--panel);padding:8px 10px;font-size:14px}.ba b{display:block;font-size:12px;color:var(--mut)}
-.val{margin-top:22px;padding:10px 12px;background:var(--bg);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
-.val button{font:inherit;padding:6px 12px;border:1px solid var(--acc);background:var(--acc);color:var(--panel);border-radius:4px;cursor:pointer}
-.feed{list-style:none;margin:0;padding:0;max-width:820px}
-.feed li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--acc);padding:12px 16px;margin-bottom:10px}
-.feed li.empty{border-left-color:var(--line);color:var(--mut)}
-.feed b{font-family:Newsreader,Georgia,serif;font-size:17px}
-svg{width:100%;height:auto;background:var(--panel);border:1px solid var(--line)}
-svg text{fill:var(--ink);font:12px "Public Sans",sans-serif}
+th{text-align:left;font-weight:600;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--mut);padding:11px 14px;border-bottom:1px solid var(--line);background:var(--bg)}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:break-word}tr:last-child td{border-bottom:0}
+tr.row{cursor:pointer}tr.row:hover td,.rl tbody tr:hover td{background:var(--accbg)}
+td small{display:block;color:var(--mut);font-size:12.5px;margin-top:2px}
+.tag{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600;white-space:nowrap}
+.Vigente,.Concluído,.Baixo{background:var(--okb);color:var(--ok)}.Revogada,.Alto{background:var(--badb);color:var(--bad)}.Médio,.Pendente{background:var(--warnb);color:var(--warn)}
+.Emandamento,.Publicada,.Emanálise{background:var(--accbg);color:var(--acc)}.Aanalisar{background:var(--bg);color:var(--mut)}
+.rl{min-width:0;table-layout:fixed}.rl td b{font-weight:600}
+.cl{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}.cl.open{display:block}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accf);border-radius:10px;padding:10px 14px;box-shadow:var(--sh)}.stat b{display:block;font:600 26px/1.1 Newsreader,Georgia,serif}.stat span{color:var(--mut);font-size:12.5px}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;padding:0;list-style:none;font-size:12px;color:var(--mut)}.steps li{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:3px 10px}
+.rep{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 26px;max-width:860px}
+.rep h2{font-size:24px;margin-bottom:4px}.rep h3{font-size:17px;margin:22px 0 6px}.rep p,.rep ul{margin:4px 0}.rep ul{padding-left:20px}
+.meta{color:var(--mut);font-size:13.5px;margin:4px 0}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:6px}.ba div{background:var(--panel);padding:8px 10px;font-size:14px}.ba b{display:block;font-size:12px;color:var(--mut)}
+.val{margin-top:22px;padding:10px 12px;background:var(--bg);border-radius:8px;font-size:13px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.val button{font:inherit;padding:6px 12px;border:0;background:var(--accf);color:#031926;font-weight:600;border-radius:8px;cursor:pointer}
+.feed{list-style:none;margin:0;padding:0;max-width:860px}.feed li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accf);border-radius:8px;padding:12px 16px;margin-bottom:10px}
+.feed li.empty{border-left-color:var(--line);color:var(--mut)}.feed b{font-family:Newsreader,Georgia,serif;font-size:17px}
+svg{width:100%;height:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}svg text{fill:var(--ink);font:12px "Public Sans",sans-serif}
 .leg{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--mut);margin:10px 0}
-@media (max-width:600px){header,main,nav{padding-left:14px;padding-right:14px}.warn{margin-left:14px;margin-right:14px}.rep{padding:16px}.ba{grid-template-columns:1fr}}
+@media (max-width:980px){.rl,.rl tbody,.rl tr,.rl td{display:block;width:100%}.rl thead,.rl colgroup{display:none}.rl tr{border-bottom:8px solid var(--bg);padding:6px 0}.rl td{border:0;padding:6px 14px}.rl td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--mut)}}
+@media (max-width:600px){header,nav,main{padding-left:14px;padding-right:14px}.warn{width:calc(100% - 28px)}.rep{padding:16px}.ba{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><h1>REGULATECA</h1><p>Biblioteca regulatória de pesquisa clínica: INAEP e Anvisa</p></header>
+<header><div class="brand"><svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><rect width='64' height='64' rx='14' fill='#031926'/><path d='M22 48V16h13a9 9 0 0 1 0 18H22m12 0 11 14' fill='none' stroke='#22ada4' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg><div><h1>REGULATECA</h1><p>Biblioteca regulatória de pesquisa clínica · INAEP e Anvisa</p></div></div><button id="tg" class="tg" type="button">Modo escuro</button></header>
 <div class="warn">Protótipo com dados de exemplo. Relações, status e análises são ilustrativos e ainda não foram validados pelo texto integral das normas.</div>
 <nav role="tablist" id="nav"></nav>
 <main id="main"></main>
@@ -129,14 +124,26 @@ var L=[
 {a:"Recursos administrativos de interesse da GGMED",o:"Anvisa",p:"ROP 10/2026 (item 4.2.1.1); ROP 15/2026 (itens 3.2.1.1 e 3.5.1.1)",d:"ROP 10: efeito suspensivo retirado (CD 566/2026). ROP 15: pendentes de ata.",s:"Pendente",f:"Ata ROP 10; pauta ROP 15",g:"GGMED"}];
 function pd(s){var x=s.split("/");return new Date(+x[2],+x[1]-1,+x[0])}
 function fd(d){return ("0"+d.getDate()).slice(-2)+"/"+("0"+(d.getMonth()+1)).slice(-2)+"/"+d.getFullYear()}
-function relogio(){var h=new Date();h.setHours(0,0,0,0);
-$("main").innerHTML=info()+'<ul class="steps"><li>1. Coleta dos PDFs de pautas, atas e extratos</li><li>2. Leitura dos itens e deliberações</li><li>3. Detecção de prazos (ex.: consulta pública)</li><li>4. Cálculo de datas e alertas</li><li>5. Validação pela equipe</li></ul><div class="wrap"><table><tr><th>Assunto</th><th>Pauta</th><th>Ata ou deliberação</th><th>Prazo</th><th>Início</th><th>Fim</th><th>Restam</th><th>Situação</th><th>Fonte</th><th>Gatilho</th><th>Validado</th></tr>'+
-L.map(function(r,k){var fim="",rest="";if(r.pz){var e=new Date(pd(r.i).getTime());e.setDate(e.getDate()+r.pz);fim=fd(e);var n=Math.round((e-h)/864e5);rest=n<0?"Encerrado":n+" dias"}
-return '<tr><td><b>'+r.a+'</b><small>'+r.o+'</small></td><td>'+r.p+'</td><td>'+r.d+'</td><td>'+(r.pz?r.pz+" dias":(r.pr||"-"))+'</td><td>'+(r.i||"-")+'</td><td>'+(fim||"-")+'</td><td>'+(rest||"-")+'</td><td>'+tag(r.s)+'</td><td>'+r.f+'</td><td><input type="checkbox" class="vk" data-k="'+K(r)+'" '+(ok(r)?'checked ':'')+'aria-label="Validado" style="min-width:0;flex:none"></td></tr>'}).join("")+'</table></div><p class="meta">A data de início do prazo é assumida como a da deliberação e deve ser confirmada com a publicação oficial. As linhas vêm dos documentos da INAEP e da Anvisa e precisam de validação. Gatilho: termo ou área que fez o robô sinalizar o item.</p>';[].forEach.call(document.querySelectorAll(".vk"),function(c){c.onchange=function(){try{localStorage.setItem("v:"+c.dataset.k,c.checked?"1":"")}catch(e){}}})}
+function n2(s){return String(s==null?"":s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
+function relogio(){var h=new Date();h.setHours(0,0,0,0);var q=n2(S.rq||"");
+var rows=L.filter(function(r){return(!S.rs||r.s===S.rs)&&(!q||n2(r.a+" "+r.d+" "+r.g+" "+r.p+" "+r.o).indexOf(q)>-1)});
+var c=function(s){return L.filter(function(r){return r.s===s}).length};
+var st='<div class="stats">'+[["Itens monitorados",L.length],["Pendentes",c("Pendente")],["Em andamento",c("Em andamento")],["Normas do DOU",NORMAS?NORMAS.normas.length:0]].map(function(x){return '<div class="stat"><b>'+x[1]+'</b><span>'+x[0]+'</span></div>'}).join("")+'</div>';
+var bar='<div class="bar"><input id="rq" placeholder="Buscar no relógio" value="'+esc(S.rq||"")+'" aria-label="Buscar"><select id="rs" aria-label="Situação"><option value="">Todas as situações</option>'+["Pendente","Em andamento","Concluído","Publicada"].map(function(v){return '<option'+(S.rs===v?' selected':'')+'>'+v+'</option>'}).join("")+'</select></div>';
+var cols=["44px","23%","11%","30%","12%","9%","auto"],th=["","Assunto","Pauta","Ata ou deliberação","Prazos","Situação","Fonte e gatilho"];
+$("main").innerHTML=info()+'<ul class="steps"><li>1. Coleta</li><li>2. Leitura de itens e deliberações</li><li>3. Detecção de prazos</li><li>4. Cálculo de datas</li><li>5. Validação pela equipe</li></ul>'+st+bar+
+'<div class="wrap"><table class="rl"><colgroup>'+cols.map(function(w){return '<col style="width:'+w+'">'}).join("")+'</colgroup><thead><tr>'+th.map(function(t){return '<th>'+t+'</th>'}).join("")+'</tr></thead><tbody>'+
+(rows.length?rows.map(function(r){var pz=esc(r.pr||"-");if(r.pz){var e=pd(r.i);e.setDate(e.getDate()+r.pz);var n=Math.round((e-h)/864e5);pz=r.pz+" dias<small>"+esc(r.i)+" até "+fd(e)+" · "+(n<0?"encerrado":"restam "+n)+"</small>"}
+return '<tr><td data-label="Validado"><input type="checkbox" class="vk" data-k="'+K(r)+'" '+(ok(r)?'checked ':'')+'aria-label="Validado" style="min-width:0;flex:none"></td><td data-label="Assunto"><div class="cl"><b>'+esc(r.a)+'</b></div><small>'+r.o+'</small></td><td data-label="Pauta">'+esc(r.p)+'</td><td data-label="Ata ou deliberação"><div class="cl">'+esc(r.d)+'</div></td><td data-label="Prazos">'+pz+'</td><td data-label="Situação">'+tag(r.s)+'</td><td data-label="Fonte e gatilho">'+esc(r.f)+'<small>'+esc(r.g||"-")+'</small></td></tr>'}).join(""):'<tr><td colspan="7">Nenhum item encontrado. Limpe a busca ou o filtro.</td></tr>')+
+'</tbody></table></div><p class="meta">Clique em um texto para expandir ou recolher. Gatilho: termo ou área que fez o robô sinalizar o item. As linhas precisam de validação pela equipe.</p>';
+[].forEach.call(document.querySelectorAll(".vk"),function(c){c.onchange=function(){try{localStorage.setItem("v:"+c.dataset.k,c.checked?"1":"")}catch(e){}}});
+[].forEach.call(document.querySelectorAll(".cl"),function(c){c.onclick=function(){c.classList.toggle("open")}});
+$("rq").oninput=function(e){S.rq=e.target.value;var p=e.target.selectionStart;relogio();$("rq").focus();$("rq").setSelectionRange(p,p)};$("rs").onchange=function(e){S.rs=e.target.value;relogio()}}
 var DATA=null,NORMAS=null;
 function K(r){return encodeURIComponent((r.o+"|"+r.a).slice(0,120))}
 function ok(r){try{return !!localStorage.getItem("v:"+K(r))}catch(e){return false}}
-function info(){return '<p class="meta">'+(DATA?('Atualizado em '+DATA.atualizado+' · '+DATA.itens.length+' itens de pautas e atas'+(DATA.coleta?' · Coleta: '+DATA.coleta:'')+(DATA.alertas.length?' · '+DATA.alertas.length+' reuniões com CAAEs diferentes entre pauta e extrato (normal quando itens entram ou saem da pauta) <details style="display:inline"><summary style="display:inline;cursor:pointer">ver</summary>'+DATA.alertas.join('<br>')+'</details>':'')):'Dados de exemplo: o arquivo dados.json ainda não foi gerado.')+(NORMAS?' · Normas do DOU: '+NORMAS.normas.length+(NORMAS.coleta?' ('+NORMAS.coleta+')':''):'')+'</p>'}
+function info(){var al=DATA&&DATA.alertas.length?'<details style="margin:6px 0"><summary style="cursor:pointer">'+DATA.alertas.length+' reuniões com CAAEs diferentes entre pauta e extrato (normal quando itens entram ou saem da pauta)</summary>'+DATA.alertas.join('<br>')+'</details>':'';
+return '<p class="meta">'+(DATA?('Atualizado em '+DATA.atualizado+' · '+DATA.itens.length+' itens de pautas e atas'+(DATA.coleta?' · Coleta: '+DATA.coleta:'')):'Dados de exemplo: o arquivo dados.json ainda não foi gerado.')+'</p><p class="meta">'+(NORMAS?'Normas do DOU: '+NORMAS.normas.length+(NORMAS.coleta?' ('+NORMAS.coleta+')':'')+' · atualizado em '+esc(NORMAS.atualizado):'Normas do DOU: ainda sem dados (o arquivo normas.json não foi gerado pelo robô)')+'</p>'+al}
 function esc(t){return String(t==null?"":t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 function orgC(o){return esc(String(o||"").split("/")[0].trim().replace("Agência Nacional de Vigilância Sanitária","Anvisa").replace("Ministério da Saúde","MS").replace("Conselho Nacional de Saúde","CNS").replace("Presidência da República","Presidência"))}
 function mapaNormas(){var ns=D.slice(0,24),c=3,s='<svg viewBox="0 0 720 '+(Math.ceil(ns.length/c)*70+30)+'" role="img" aria-label="Mapa regulatório">';
@@ -144,10 +151,13 @@ ns.forEach(function(d,k){var x=20+(k%c)*235,y=20+Math.floor(k/c)*70;s+='<g tabin
 $("main").innerHTML='<p class="meta">As '+ns.length+' normas mais recentes do DOU. As ligações de altera e revoga entram na etapa 2, junto com a análise de impacto.</p>'+s+'</svg>';
 [].forEach.call(document.querySelectorAll("svg g"),function(g){g.onclick=function(){S.sel=g.dataset.i;draw()};g.onkeydown=function(e){if(e.key==="Enter"){S.sel=g.dataset.i;draw()}}})}
 function refaz(){var rows=DATA?DATA.itens.map(function(x){var s=!x.decisao||/retirado/i.test(x.decisao)?"Pendente":/^Informe/.test(x.decisao)?"Em andamento":"Concluído";return{a:x.assunto,o:x.orgao,p:x.pauta||x.reuniao,d:x.decisao||"Sem ata ou extrato ainda",pr:x.prazos,s:s,f:x.fontes,g:x.gatilhos}}):L;
-if(NORMAS){rows=rows.concat(NORMAS.normas.map(function(n){return{a:esc(n.titulo),o:orgC(n.orgao),p:"DOU "+esc(n.data),d:esc(n.ementa||"-"),pr:"-",s:"Publicada",f:"DOU",g:esc(n.gatilhos)}}));
+if(NORMAS){rows=rows.concat(NORMAS.normas.map(function(n){return{a:n.titulo,o:orgC(n.orgao),p:"DOU "+n.data,d:n.ementa||"-",pr:"-",s:"Publicada",f:"DOU",g:n.gatilhos}}));
 D=NORMAS.normas.map(function(n){return{id:esc(n.id),n:esc(n.titulo),org:orgC(n.orgao),tipo:esc(n.tipo),st:"Publicada",data:esc(n.data),em:esc((n.ementa||"").slice(0,200)),imp:"A analisar",link:/^https?:/.test(n.link||"")?esc(n.link):""}})}
 L=rows}
 function draw(){nav();if(S.sel)rep();else[lib,map,relogio,feed][S.tab]()}
+function tema(t){document.documentElement.setAttribute("data-theme",t);try{localStorage.setItem("tema",t)}catch(e){}$("tg").textContent=t==="dark"?"Modo claro":"Modo escuro"}
+(function(){var t;try{t=localStorage.getItem("tema")}catch(e){}if(!t)t=(typeof matchMedia!=="undefined"&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";tema(t)})();
+$("tg").onclick=function(){tema(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark")};
 function ld(u){return fetch(u,{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
 Promise.all([ld("dados.json"),ld("normas.json")]).then(function(a){DATA=a[0];NORMAS=a[1];if(!DATA&&!NORMAS)return;refaz();S.tab=2;S.sel=null;
 document.querySelector(".warn").textContent="O Relógio e, quando disponível, a Biblioteca e o Mapa usam dados reais lidos de pautas, atas, extratos e do DOU. Valide tudo antes de usar.";draw()});
