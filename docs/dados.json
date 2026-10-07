@@ -1,6 +1,6 @@
 {
- "atualizado": "06/10/2026 06:16",
- "coleta": "0 documentos novos, 7 falhas",
+ "atualizado": "07/10/2026 06:05",
+ "coleta": "1 documentos novos, 0 falhas",
  "alertas": [
   "11ª RO INAEP: só na pauta: 94677325.0.0000.9167; só no extrato: 88242825.9.1001.5335, 92173725.9.0000.001",
   "12ª RO INAEP: só na pauta: 92173725.9.0000.001; só no extrato: 92173725.9.0000.0017, 94677325.0.0000.9167",
@@ -152,6 +152,39 @@
    "decisao": "Deliberação: Nos termos das notas técnicas e do Voto nº 26/2026INAEP/DECIT/SCTIE/MS do relator, o Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, pela renovação do credenciamento dos Comitês de Ética em Pesquisa: 5062 - Centro Universitário do Espírito Santo - UNESC; 5152 Universidade Fed",
    "prazos": "",
    "gatilhos": "etica em pesquisa",
+   "relevancia": "alta",
+   "fontes": "extrato, pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "14ª RO INAEP",
+   "assunto": "Construção do Painel de Indicadores dos Comitês de Ética em Pesquisa (CEPs).",
+   "pauta": "",
+   "decisao": "Informe (sem deliberação)",
+   "prazos": "",
+   "gatilhos": "etica em pesquisa; pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "extrato"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "14ª RO INAEP",
+   "assunto": "Instituição de Grupo de Trabalho sobre a participação dos representantes de participantes de pesquisa no Sistema Nacional de Ética em Pesquisa com Seres Humanos.",
+   "pauta": "14ª RO INAEP item 2.1 (30/09/2026)",
+   "decisao": "Deliberado: A Coordenadora da Instância Nacional de Ética em Pesquisa, nos termos do Voto nº 27/2026-INAEP/DECIT/SCTIE/MS, apresentou proposta de instituição de Grupo de Trabalho (GT) sobre a participação e a representação dos participantes de pesquisa no Sistema Nacional de Ética em Pesquisa com Seres Humanos. A propo",
+   "prazos": "180 (cento e oitenta) dias (ionamento do GT, respeitada sua autonomia técnica. O GT terá prazo de 180 (cento e oitenta) dias, co)",
+   "gatilhos": "etica em pesquisa; pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "extrato, pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "14ª RO INAEP",
+   "assunto": "Recursos de análise ética.",
+   "pauta": "14ª RO INAEP item 3.1 (30/09/2026)",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, pelo indeferimento do recurso de análise ética do protocolo de pesquisa CAAE: 77596623.5.0000.5160. Recurso: CAAE: 97754126.0.0000.5105. Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimid",
+   "prazos": "",
+   "gatilhos": "analise etica; caae; etica em pesquisa; protocolo de pesquisa",
    "relevancia": "alta",
    "fontes": "extrato, pauta"
   },
@@ -603,28 +636,6 @@
    "decisao": "Item retirado de pauta",
    "prazos": "",
    "gatilhos": "pesquisa com seres humanos; seres humanos",
-   "relevancia": "alta",
-   "fontes": "pauta"
-  },
-  {
-   "orgao": "INAEP",
-   "reuniao": "14ª RO INAEP",
-   "assunto": "Instituição de Grupo de Trabalho sobre a participação dos representantes de participantes de pesquisa no Sistema Nacional de Ética em Pesquisa com Seres Humanos.",
-   "pauta": "14ª RO INAEP item 2.1 (30/09/2026)",
-   "decisao": "",
-   "prazos": "",
-   "gatilhos": "etica em pesquisa; pesquisa com seres humanos; seres humanos",
-   "relevancia": "alta",
-   "fontes": "pauta"
-  },
-  {
-   "orgao": "INAEP",
-   "reuniao": "14ª RO INAEP",
-   "assunto": "Trecho: …Recursos de análise ética (CAAE: 77596623.5.0000.5160; 97754126.0.0000.5105)…",
-   "pauta": "14ª RO INAEP item 3.1 (30/09/2026)",
-   "decisao": "",
-   "prazos": "",
-   "gatilhos": "analise etica; caae",
    "relevancia": "alta",
    "fontes": "pauta"
   },

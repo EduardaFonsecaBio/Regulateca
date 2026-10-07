@@ -1,14 +1,8 @@
 {
- "data": "2026-10-06T09:16",
- "resumo": "0 documentos novos, 7 falhas",
- "novos": [],
- "falhas": [
-  "anvisa_pauta: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/pautas/2026 (HTTP sem resposta)",
-  "anvisa_pauta: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/pautas (HTTP sem resposta)",
-  "anvisa_ata: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026 (HTTP sem resposta)",
-  "anvisa_ata: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas (HTTP sem resposta)",
-  "inaep: não abriu https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes (HTTP sem resposta)",
-  "inaep: não abriu https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/pautas (HTTP sem resposta)",
-  "inaep: não abriu https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos (HTTP sem resposta)"
- ]
+ "data": "2026-10-07T09:05",
+ "resumo": "1 documentos novos, 0 falhas",
+ "novos": [
+  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-de-deliberacao-da-inaep-14a-reuniao-ordinaria-2026.pdf"
+ ],
+ "falhas": []
 }
