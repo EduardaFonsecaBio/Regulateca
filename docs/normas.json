@@ -1,6 +1,6 @@
 {
- "atualizado": "05/10/2026 06:08",
- "coleta": "6 normas novas, 0 dias sem edição baixada",
+ "atualizado": "08/10/2026 06:07",
+ "coleta": "2 normas novas, 0 dias sem edição baixada",
  "datas": [
   "2026-07-06",
   "2026-07-07",
@@ -93,9 +93,40 @@
   "2026-10-02",
   "2026-10-03",
   "2026-10-04",
-  "2026-10-05"
+  "2026-10-05",
+  "2026-10-06",
+  "2026-10-07",
+  "2026-10-08"
  ],
  "normas": [
+  {
+   "id": "24463446",
+   "tipo": "Resolução-RE",
+   "numero": "3.957",
+   "titulo": "RESOLUÇÃO-RE nº 3.957, DE 6 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "07/10/2026",
+   "secao": "DO1",
+   "edicao": "190",
+   "pagina": "114",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Autorizar a implementação das petições relacionadas à Coordenação de Pesquisa ",
+   "gatilhos": "ensaios clinicos; pesquisa clinica",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=515&pagina=114"
+  },
+  {
+   "id": "24463447",
+   "tipo": "Resolução-RE",
+   "numero": "3.956",
+   "titulo": "RESOLUÇÃO-RE nº 3.956, DE 6 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "07/10/2026",
+   "secao": "DO1",
+   "edicao": "190",
+   "pagina": "114",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Deferir petições relacionadas à Coordenação de Pesquisa Clínica em Medicamento",
+   "gatilhos": "ddcm; ensaio clinico; ensaios clinicos; pesquisa clinica",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=07/10/2026&jornal=515&pagina=114"
+  },
   {
    "id": "24447266",
    "tipo": "Resolução-RE",
