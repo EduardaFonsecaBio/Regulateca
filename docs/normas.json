@@ -1,6 +1,6 @@
 {
- "atualizado": "08/10/2026 06:07",
- "coleta": "2 normas novas, 0 dias sem edição baixada",
+ "atualizado": "10/10/2026 06:05",
+ "coleta": "3 normas novas, 0 dias sem edição baixada",
  "datas": [
   "2026-07-06",
   "2026-07-07",
@@ -96,9 +96,53 @@
   "2026-10-05",
   "2026-10-06",
   "2026-10-07",
-  "2026-10-08"
+  "2026-10-08",
+  "2026-10-09",
+  "2026-10-10"
  ],
  "normas": [
+  {
+   "id": "24475771",
+   "tipo": "Resolução-RE",
+   "numero": "3.990",
+   "titulo": "RESOLUÇÃO-RE Nº 3.990, DE 8 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "09/10/2026",
+   "secao": "DO1",
+   "edicao": "192",
+   "pagina": "160",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Deferir petições relacionadas à Coordenação de Pesquisa Clínica em Medicamento",
+   "gatilhos": "ddcm; ensaio clinico; ensaios clinicos; pesquisa clinica",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=515&pagina=160"
+  },
+  {
+   "id": "24475772",
+   "tipo": "Resolução-RE",
+   "numero": "3.992",
+   "titulo": "RESOLUÇÃO-RE nº 3.992, DE 8 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "09/10/2026",
+   "secao": "DO1",
+   "edicao": "192",
+   "pagina": "161",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve Art. 1º Publicar a desistência a pedido das petições/processos relacionadas à Coordenaç",
+   "gatilhos": "ensaios clinicos; pesquisa clinica",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=515&pagina=161"
+  },
+  {
+   "id": "24475773",
+   "tipo": "Resolução-RE",
+   "numero": "3.991",
+   "titulo": "RESOLUÇÃO-RE nº 3.991, DE 8 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "09/10/2026",
+   "secao": "DO1",
+   "edicao": "192",
+   "pagina": "160",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Autorizar a implementação das petições relacionadas à Coordenação de Pesquisa ",
+   "gatilhos": "ensaios clinicos; pesquisa clinica; pesquisas clinicas",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=09/10/2026&jornal=515&pagina=160"
+  },
   {
    "id": "24463446",
    "tipo": "Resolução-RE",
