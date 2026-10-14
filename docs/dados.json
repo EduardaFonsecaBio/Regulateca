@@ -1,6 +1,6 @@
 {
- "atualizado": "13/10/2026 06:07",
- "coleta": "0 documentos novos, 0 falhas",
+ "atualizado": "14/10/2026 06:20",
+ "coleta": "1 documentos novos, 0 falhas",
  "alertas": [
   "11ª RO INAEP: só na pauta: 94677325.0.0000.9167; só no extrato: 88242825.9.1001.5335, 92173725.9.0000.001",
   "12ª RO INAEP: só na pauta: 92173725.9.0000.001; só no extrato: 92173725.9.0000.0017, 94677325.0.0000.9167",
@@ -636,6 +636,61 @@
    "decisao": "Item retirado de pauta",
    "prazos": "",
    "gatilhos": "pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "15ª RO INAEP",
+   "assunto": "Proposta de Consulta Pública para regulamentação de procedimentos de interposição, admissibilidade, instrução, análise e julgamento de recursos administrativos interpostos no âmbito do Sistema Nacional de Ética em Pesquisa com Seres Humanos e da Instância Naci",
+   "pauta": "15ª RO INAEP item 2.1 (14/10/2026)",
+   "decisao": "",
+   "prazos": "Proposta de abertura de consulta pública",
+   "gatilhos": "etica em pesquisa; pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "15ª RO INAEP",
+   "assunto": "Proposta de Consulta Pública para regulamentação da classiﬁcação do risco das pesquisas com seres humanos e estabelecer os procedimentos para a tramitação dos protocolos e emendas de pesquisa no Sistema Nacional de Ética em Pesquisa com Seres Humanos.",
+   "pauta": "15ª RO INAEP item 2.2 (14/10/2026)",
+   "decisao": "",
+   "prazos": "Proposta de abertura de consulta pública",
+   "gatilhos": "etica em pesquisa; pesquisa com seres humanos; pesquisas com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "15ª RO INAEP",
+   "assunto": "Trecho: …Pauta 0058621836 SEI 25000.153802/2026-90 / pg. 1 A s s u n t o : Recursos de análise ética (CAAE: 95155326.0.0000.5294; 99521826.6.0000.5616; 98881726.9.0000.5508; 98594226.3.0000.5166).…",
+   "pauta": "15ª RO INAEP item 3.1 (14/10/2026)",
+   "decisao": "",
+   "prazos": "",
+   "gatilhos": "analise etica; caae",
+   "relevancia": "alta",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "15ª RO INAEP",
+   "assunto": "Renovação do credenciamento de Comitês de Ética em Pesquisa.",
+   "pauta": "15ª RO INAEP item 3.2 (14/10/2026)",
+   "decisao": "",
+   "prazos": "",
+   "gatilhos": "etica em pesquisa",
+   "relevancia": "alta",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "15ª RO INAEP",
+   "assunto": "Descredenciamento de Comitês de Ética em Pesquisa.",
+   "pauta": "15ª RO INAEP item 3.3 (14/10/2026)",
+   "decisao": "",
+   "prazos": "",
+   "gatilhos": "etica em pesquisa",
    "relevancia": "alta",
    "fontes": "pauta"
   },
