@@ -1,6 +1,6 @@
 {
- "atualizado": "14/10/2026 06:21",
- "coleta": "2 normas novas, 1 dias sem edição baixada",
+ "atualizado": "16/10/2026 06:21",
+ "coleta": "3 normas novas, 1 dias sem edição baixada",
  "datas": [
   "2026-07-06",
   "2026-07-07",
@@ -101,9 +101,53 @@
   "2026-10-10",
   "2026-10-11",
   "2026-10-13",
-  "2026-10-14"
+  "2026-10-14",
+  "2026-10-15",
+  "2026-10-16"
  ],
  "normas": [
+  {
+   "id": "24493369",
+   "tipo": "Resolução-RE",
+   "numero": "4.058",
+   "titulo": "RESOLUÇÃO-RE nº 4.058, DE 14 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "15/10/2026",
+   "secao": "DO1",
+   "edicao": "195",
+   "pagina": "63",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Deferir petições relacionadas à Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos, conforme anexo; Art",
+   "gatilhos": "ddcm; ensaio clinico; ensaios clinicos; pesquisa clinica; pesquisas clinicas",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=515&pagina=63"
+  },
+  {
+   "id": "24493370",
+   "tipo": "Resolução-RE",
+   "numero": "4.059",
+   "titulo": "RESOLUÇÃO-RE nº 4.059, DE 14 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "15/10/2026",
+   "secao": "DO1",
+   "edicao": "195",
+   "pagina": "63",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Autorizar a implementação das petições relacionadas à Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológico",
+   "gatilhos": "ensaios clinicos; pesquisa clinica; pesquisas clinicas",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=515&pagina=63"
+  },
+  {
+   "id": "24493371",
+   "tipo": "Resolução-RE",
+   "numero": "4.060",
+   "titulo": "RESOLUÇÃO-RE nº 4.060, DE 14 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "15/10/2026",
+   "secao": "DO1",
+   "edicao": "195",
+   "pagina": "64",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Publicar a reativação de DDCM relacionado à Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos, conform",
+   "gatilhos": "ddcm; ensaio clinico; ensaios clinicos; pesquisa clinica",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=15/10/2026&jornal=515&pagina=64"
+  },
   {
    "id": "24484166",
    "tipo": "Resolução-RE",
