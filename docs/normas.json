@@ -1,6 +1,6 @@
 {
- "atualizado": "19/10/2026 06:24",
- "coleta": "3 normas novas, 0 dias sem edição baixada",
+ "atualizado": "20/10/2026 06:21",
+ "coleta": "2 normas novas, 0 dias sem edição baixada",
  "datas": [
   "2026-07-06",
   "2026-07-07",
@@ -106,9 +106,38 @@
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
-  "2026-10-19"
+  "2026-10-19",
+  "2026-10-20"
  ],
  "normas": [
+  {
+   "id": "24525259",
+   "tipo": "Resolução-RE",
+   "numero": "4.141",
+   "titulo": "RESOLUÇÃO-RE Nº 4.141, DE 19 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "20/10/2026",
+   "secao": "DO1",
+   "edicao": "198",
+   "pagina": "103",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Deferir petições relacionadas à Coordenação de Pesquisa Clínica em Medicamento",
+   "gatilhos": "ddcm; ensaio clinico; ensaios clinicos; pesquisa clinica; pesquisas clinicas",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/10/2026&jornal=515&pagina=103"
+  },
+  {
+   "id": "24525260",
+   "tipo": "Resolução-RE",
+   "numero": "4.142",
+   "titulo": "RESOLUÇÃO-RE Nº 4.142, DE 19 DE OUTUBRO DE 2026",
+   "orgao": "Ministério da Saúde / Coordenação de Pesquisa Clínica em Medicamentos e Produtos Biológicos",
+   "data": "20/10/2026",
+   "secao": "DO1",
+   "edicao": "198",
+   "pagina": "103",
+   "ementa": "O COORDENADOR DE PESQUISA CLÍNICA EM MEDICAMENTOS E PRODUTOS BIOLÓGICOS DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 112, aliado ao art. 203, I, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Art. 1º Publicar a desistência a pedido das petições/processos relacionadas à Coordena",
+   "gatilhos": "ensaio clinico; ensaios clinicos; pesquisa clinica",
+   "link": "http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/10/2026&jornal=515&pagina=103"
+  },
   {
    "id": "24514415",
    "tipo": "Resolução-RE",
