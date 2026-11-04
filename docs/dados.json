@@ -1,6 +1,6 @@
 {
- "atualizado": "03/11/2026 13:43",
- "coleta": "0 documentos novos, 0 falhas",
+ "atualizado": "04/11/2026 13:40",
+ "coleta": "2 documentos novos, 0 falhas",
  "alertas": [
   "11ª RO INAEP: só na pauta: 94677325.0.0000.9167; só no extrato: 88242825.9.1001.5335, 92173725.9.0000.001",
   "12ª RO INAEP: só na pauta: 92173725.9.0000.001; só no extrato: 92173725.9.0000.0017, 94677325.0.0000.9167",
@@ -242,6 +242,39 @@
    "gatilhos": "comite de etica; etica em pesquisa",
    "relevancia": "alta",
    "fontes": "extrato, pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "16ª RO INAEP",
+   "assunto": "Informe sobre a disponibilização em ambiente eletrônico das consultas públicas aprovadas na 15ª ROI.",
+   "pauta": "",
+   "decisao": "Deliberado: O membro informou que a Instância Nacional de Ética em Pesquisa (Inaep) utiliza o Portal Brasil Participativo como ferramenta para a participação social na realização de consultas públicas, com o objetivo de receber contribuições da sociedade voltadas ao aprimoramento das propostas normativas relacionadas a",
+   "prazos": "",
+   "gatilhos": "etica em pesquisa; pesquisa com seres humanos; pesquisas com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "extrato"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "16ª RO INAEP",
+   "assunto": "Recursos de análise ética.",
+   "pauta": "",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, pelo indeferimento do recurso de análise ética do protocolo de pesquisa CAAE: 95155326.0.0000.5294. Recurso: CAAE: 98881726.9.0000.5508. Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por maioria,",
+   "prazos": "",
+   "gatilhos": "analise etica; caae; etica em pesquisa; protocolo de pesquisa",
+   "relevancia": "alta",
+   "fontes": "extrato"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "16ª RO INAEP",
+   "assunto": "Renovação do credenciamento de Comitês de Ética em Pesquisa.",
+   "pauta": "",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu nos termos no voto do relator, por unanimidade, pela revogação da suspensão do Comitê de Ética em Pesquisa nº 8049 – Instituto Federal Catarinense – IF. Ademais, o Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, p",
+   "prazos": "",
+   "gatilhos": "comite de etica; etica em pesquisa; pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "extrato"
   },
   {
    "orgao": "INAEP",
@@ -682,6 +715,50 @@
    "gatilhos": "comite de etica; etica em pesquisa",
    "relevancia": "alta",
    "fontes": "extrato, pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "inaep_extrato_1ro_2026.pdf",
+   "assunto": "Proposta para a redistribuição desenvolvimentos de biobancos. do passivo de protocolos de",
+   "pauta": "",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por maioria, delegar, de forma excepcional e transitória, a Comitê de Ética em Pesquisa da Fundação Oswaldo Cruz (Fiocruz), a competência especíﬁca para a avaliação de protocolos de desenvolvimento de biobancos; Suspender o sobrestamento tempo",
+   "prazos": "",
+   "gatilhos": "biobanco; comite de etica; etica em pesquisa",
+   "relevancia": "alta",
+   "fontes": "extrato"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "inaep_extrato_1ro_2026.pdf",
+   "assunto": "Proposta para o tratamento do passivo de recursos de análise ética.",
+   "pauta": "",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, pela indicação, dentre os membros titulares ou suplentes presentes na 1ª Reunião Ordinária 2026 da Inaep, dentre aqueles que se declarem aptos a assumir a relatoria dos processos de recurso, cabendo aos relatores designados a ",
+   "prazos": "",
+   "gatilhos": "analise etica; etica em pesquisa",
+   "relevancia": "alta",
+   "fontes": "extrato"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "inaep_extrato_1ro_2026.pdf",
+   "assunto": "Proposta de Regimento Interno provisório da Inaep.",
+   "pauta": "",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, pela aprovação da proposta do Regimento Interno provisório da Inaep, com a sugestões de alteração, determinando que a Secretaria-Executiva adote as providências operacionais necessárias ao cumprimento da decisão, observando as",
+   "prazos": "",
+   "gatilhos": "etica em pesquisa",
+   "relevancia": "alta",
+   "fontes": "extrato"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "inaep_extrato_1ro_2026.pdf",
+   "assunto": "Calendário de Reuniões Ordinárias da Inaep para os meses de março, abril e maio de 2026.",
+   "pauta": "",
+   "decisao": "Deliberação: O Colegiado da Instância Nacional de Ética em Pesquisa decidiu, por unanimidade, pela aprovação da proposta de calendário de Reuniões Ordinárias da Inaep para os meses de março, abril e maio de 2026.",
+   "prazos": "",
+   "gatilhos": "etica em pesquisa",
+   "relevancia": "alta",
+   "fontes": "extrato"
   },
   {
    "orgao": "INAEP",
