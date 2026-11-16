@@ -1,6 +1,6 @@
 {
- "atualizado": "15/11/2026 12:57",
- "coleta": "0 documentos novos, 0 falhas",
+ "atualizado": "16/11/2026 16:01",
+ "coleta": "1 documentos novos, 0 falhas",
  "alertas": [
   "11ª RO INAEP: só na pauta: 94677325.0.0000.9167; só no extrato: 88242825.9.1001.5335, 92173725.9.0000.001",
   "12ª RO INAEP: só na pauta: 92173725.9.0000.001; só no extrato: 92173725.9.0000.0017, 94677325.0.0000.9167",
@@ -768,6 +768,17 @@
    "decisao": "Item retirado de pauta",
    "prazos": "",
    "gatilhos": "pesquisa com seres humanos; seres humanos",
+   "relevancia": "alta",
+   "fontes": "pauta"
+  },
+  {
+   "orgao": "INAEP",
+   "reuniao": "17ª RO INAEP",
+   "assunto": "Recursos de análise ética (CAAE: 00839926.7.0000.5502; 00389826.3.0000.5129; 00616526.0.0000.8123; 99411026.7.0000.5289)",
+   "pauta": "17ª RO INAEP item 3.1 (17/11/2026)",
+   "decisao": "",
+   "prazos": "",
+   "gatilhos": "analise etica; caae",
    "relevancia": "alta",
    "fontes": "pauta"
   },
