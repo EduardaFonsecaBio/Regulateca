@@ -1,22 +1,14 @@
 {
- "data": "2026-11-20T17:26",
- "resumo": "15 documentos novos, 0 falhas",
- "novos": [
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-10a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-11a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-12a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-13a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-14a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-15a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-16a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-17a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-3a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-4a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-5a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-6a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-7a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-8a-reuniao-ordinaria-2026.pdf",
-  "https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos/extrato-9a-reuniao-ordinaria-2026.pdf"
- ],
- "falhas": []
+ "data": "2026-11-21T16:33",
+ "resumo": "0 documentos novos, 7 falhas",
+ "novos": [],
+ "falhas": [
+  "anvisa_pauta: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/pautas/2026 (HTTP sem resposta)",
+  "anvisa_pauta: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/pautas (HTTP sem resposta)",
+  "anvisa_ata: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas/2026 (HTTP sem resposta)",
+  "anvisa_ata: não abriu https://www.gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/atas (HTTP sem resposta)",
+  "inaep: não abriu https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes (HTTP sem resposta)",
+  "inaep: não abriu https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/pautas (HTTP sem resposta)",
+  "inaep: não abriu https://www.gov.br/saude/pt-br/composicao/orgaos-colegiados/inaep/reunioes/extratos (HTTP sem resposta)"
+ ]
 }
